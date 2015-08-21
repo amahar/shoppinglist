@@ -22,71 +22,97 @@
     padding-top: 31.6px;
     color: lightcoral;
 }
-.navmenu{
-	float: left;
-	margin: 1rem;
-	width: 70%;
-	height: 50px;
-	background-color: aliceblue;
+.tableheader{
+    border: 1px solid red;
+    width: 100%;
+    background-color: aliceblue;
 }
-.navmenu li{
+
+.tableheader li{
 	display: inline-block;
     margin-left: 3.5rem;
     font-family: 'roboto';
     letter-spacing: 0.04rem;
     color: coral;
 }
-.navmenu .item0{
+.tableheader .item0{
 	padding-right: 3rem;
     margin-left: 1rem;
 }
 .sidemenu{
+	border: 1px solid purple;
 	background-color: lightblue;
-	position: absolute;
-    right: 50px;
-	width: 300px;
-	height: 800px;
-	color: lightgrey;
+    position: absolute;
+    right: 1%;
+    width: 33%;
+    color: lightgrey;
 }
-.container{
-	position: absolute;
-    top: 18rem;
-    left: 5.5rem;
+.sidetext{
+	margin: auto;
+    width: 30%;
 }
-.container button{
+.wrapper{
+	border: 1px solid;
+	width: 56%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.tablecontent{
+	border: 1px solid yellow;
+}
+.tablecontent li{
+	display: inline-block;
+	padding-left: 3rem;
+}
+.tablecontent button{
+	position: relative;
+	right: 5rem;
 	border-radius: 1rem;
 	background-color: bisque;
 	color: cadetblue;
 }
 input {
-	border-radius: 10px;
-    width: 150px;
+	border-radius: 1rem;
+    width: 8rem;
     padding-left: 1rem;
 }
 .total, .quantity, .price{
-	width: 70px;
+	width: 4rem;
+}
+.tablerrors{
+	margin-left: 3.5rem;
+}
+
+.tablerrors li{
+	display: inline-block;
+	margin-left: 3rem;
+	color: red;
+    font-family: cursive;
+}
+.append li{
+	display: inline-block;
+	color: chocolate;
+	padding-left: 8.5rem;
+}
+.append button{
+	border-radius: 1rem;
+    background-color: bisque;
+    color: cadetblue;
 }
 .productdescrip{
-	position: relative;
-	left: 250px;
+
 }
 .price{
-	position: relative;
-	left: 275px;
+
 }
 .quantity{
-	position: relative;
-	left: 305px;
+
 }
 .total{
-	position: relative;
-	left: 340px;
+
 }
 .apppend{
-	position: absolute;
-    left: 8rem;
-    top: 22rem;
-	display: inline-flex;
+
 }
 #error{
 	margin-top: 20px;

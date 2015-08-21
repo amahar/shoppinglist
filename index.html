@@ -9,42 +9,43 @@
 	<script src="js/app.js"></script>
 </head>
 <body>
-<header class="masthead">
-<img src="images/cart.png" alt="Shopping Cart">
-<div class="headertext">
-	<h3>Captain America's Shopping Cart</h3>
-</div>	
-</header>
-<nav class="navmenu">
-	<ul>
-		<li class="item0">Order ListBy</li>
-		<li class="item1">Remove</li>
-		<li class="item2">Product Description</li>
-		<li class="item3">Unit Price</li>
-		<li class="item4">Quantity</li>
-		<li class="item5">Total Price</li>
-	</ul>
-</nav>
-<aside class="sidemenu">
-	<h3 class="sidetext">Shopping List</h3>
-</aside>
-
-<section class="container">
-	<button class="add">Add</button>
-	<input class="productdescrip" type="text" placeholder="Enter Item Here"><div id="error"></div>
-	<input class="price" type="text" placeholder="Price">
-	<input class="quantity" type="text" placeholder="Quantity" >
-	<input class="total" type="text" placeholder ="Total">
-</section>
-
-<section class="apppend">
-<ul>
-	<li class="item1"></li>
-	<li class="item2"></li>
-</ul>
-
-</section>
-<div></div>
-</section>	
+	<header class="masthead">
+		<img src="images/cart.png" alt="Shopping Cart">
+		<div class="headertext">
+			<h3>Captain America's Shopping Cart</h3>
+		</div>	
+	</header>
+	<section class="wrapper">
+		<section class="tableheader">
+		    <ul>
+		        <li class="item1">Remove</li>
+		        <li class="item2">Product Description</li>
+		        <li class="item3">Unit Price</li>
+		        <li class="item4">Quantity</li>
+		        <li class="item5">Total Price</li>
+		    </ul>
+		</section>
+		<section class="tablecontent">
+			<ul>
+				<li><button class="add">Add</button></li>
+				<li><input class="productdescrip" type="text" placeholder="Enter Item Here"></li>
+				<li><input class="price" type="text" placeholder="Price"></li>
+				<li><input class="quantity" type="text" placeholder="Quantity" ></li>
+				<!--<li><input class="total" type="text" placeholder ="Total"></li>-->
+			</ul>
+		</section>
+		<section class="tablerrors">
+			<ul>
+				<li class="error1"></li>
+				<li class="error2"></li>
+				<li class="error3"></li>
+			</ul>
+		</section>
+		<section class="append">
+			<ul>
+				
+			</ul>
+		</section>
+	</section>	
 </body>
 </html>
