@@ -26,7 +26,7 @@ $( "button" ).on( "click", function(){
 		$('.error1, .error2, .error3').hide('');
 		}
 });
-$('.removelist').on("click",function(){
+$('ul').on("click",".removelist", function(){
 	alert("this clicked");
 	//$(this).toggle();
 });
