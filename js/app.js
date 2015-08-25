@@ -18,16 +18,17 @@ $( "button" ).on( "click", function(){
 		} else if (quantity.length == 0) {
 			$('.error3').text("Please enter quantity").show();
 	} else {
-		$('.append ul').append('<button class="removelist">Remove</button>');
-		$('.append ul').append('<li>' + product + '</li>').show();
-		$('.append ul').append('<li>' + price + '</li>').show();
-		$('.append ul').append('<li>' + quantity + '</li>').show();
-		$('.append ul').append('<li>' + totalCal + '</li>').show();
+		$('.shoplist ul').append('<button class="removelist">Remove</button>');
+		$('.shoplist ul').append('<li>' + product + '</li>').show();
+		$('.shoplist ul').append('<li>' + price + '</li>').show();
+		$('.shoplist ul').append('<li>' + quantity + '</li>').show();
+		$('.shoplist ul').append('<li>' + totalCal + '</li>').show();
 		$('.error1, .error2, .error3').hide('');
 		}
 });
 $('ul').on("click",".removelist", function(){
-	alert("this clicked");
+	$(this).nextAll().slice(0,4).toggle();
+	$(this).toggle();
 	//$(this).toggle();
 });
 });
