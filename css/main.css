@@ -90,3 +90,6 @@ input {
 #error{
 	margin-top: 20px;
 }
+input:focus{
+	outline: none;
+}

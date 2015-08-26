@@ -1,7 +1,18 @@
 $(document).ready(function(){
 
-	// User enter text 
+
+// user can enter or click to add values
+	$('.productdescrip, .price, .quantity').keypress(function(e){
+		if (e.which === 13){
+			enterInput();
+		};
+	});
 	$( ".add" ).on( "click", function(){
+			enterInput();
+	});
+
+// main function	
+		function enterInput(){
 
 		var product = $('.productdescrip').val().trim();
 		var price = $('.price').val().trim();
@@ -24,15 +35,19 @@ $(document).ready(function(){
 			$('.shoplist ul').append('<li>' + price + '</li>').show();
 			$('.shoplist ul').append('<li>' + quantity + '</li>').show();
 			$('.shoplist ul').append('<li>' + totalCal + '</li>').show();
+			$('.productdescrip, .price, .quantity').val('');
 			$('.error1, .error2, .error3').hide('');
 		}
-	});
+	};
 
-	//Romove a row using event delegation
-	$('ul').on("click",".removelist", function(){
+//Romove a row using event delegation
+	$(document).on("click",".removelist", function(){
 		$(this).nextAll().slice(0,4).toggle();
 		$(this).toggle();
+
 	});
-	
+
+	$('#sortable').sortable({ axis: "y"});
+
 });
 
